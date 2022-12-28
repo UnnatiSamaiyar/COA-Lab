@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void halfadder(int A, int B){
+	int sum,carry;
+	sum=A^B;
+	carry=A&B;
+	
+	cout<<"Sum:"<<sum<<endl;
+	cout<<"Carry:"<<carry<<endl;
+}
+
+int main(){
+	int A,B;
+	cin>>A>>B;
+	cout<<"A:"<<A<<endl;
+	cout<<"B:"<<B<<endl;
+	
+	halfadder(A,B);
+	return 0;
+}
