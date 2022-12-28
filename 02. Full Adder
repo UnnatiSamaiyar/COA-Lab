@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void fulladder(int A, int B, int C_In){
+	int sum,C_Out;
+	sum=C_In^(A^B);
+	C_Out=(A&B)|(B&C_In)|(A&C_In);
+	
+	cout<<"Sum:"<<sum<<endl;
+    cout<<"C_Out:"<<C_Out<<endl;
+}
+
+int main(){
+	int A,B,C_In;
+	cin>>A>>B>>C_In;
+	
+	cout<<"A:"<<A<<endl;
+	cout<<"B:"<<B<<endl;
+	cout<<"C_In:"<<C_In<<endl;
+	
+	fulladder(A,B,C_In);
+	return 0;
+}
