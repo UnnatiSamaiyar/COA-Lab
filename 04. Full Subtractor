@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void fullsubtractor(int A, int B, int B_In){
+	int diff=(A^B)^B_In;
+	int A1=not(A);
+	int B_Out=A1&B_In|A1&B|B&B_In;
+	
+	cout<<"Difference:"<<Diff<<endl;
+	cout<<"B_Out:"<<B_Out<<endl;
+}
+
+int main(){
+	int A,B,B_In;
+	cin>>A>>B>>B_In;
+	
+	cout<<"A:"<<A<<endl;
+	cout<<"B:"<<B<<endl;
+	cout<<"B_In:"<<B_In<<endl;
+	
+	fullsubtractor(A,B,B_In);
+	return 0;
+}
